@@ -15,6 +15,75 @@
       <a class="has-border" href="resume.html">Resume</a>
       <a class="has-border" href="aboutme.html">About Me</a>
       <a class="has-border" href="https://medium.com/@nicholasryanmccormick">My Blog</a>
+
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" >
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" >
+        </div>
+        <div>
+          <label for="age">Age</label>
+          <input type="number" name="age" id="age" min="1" max="200" step="5">
+        </div>
+        <div>
+          <label for="date">Birthdate</label>
+          <input type="date" name="date" id="date" min="2019-06-10">
+        </div>
+        <div>
+          How did you hear about us?
+          <div>
+            <label for="Resume">Resume</label>
+            <input type="checkbox" name="Resume" id="Resume">
+          </div>
+          <div>
+            <label for="Linkedin">Linkedin</label>
+            <input type="checkbox" name="Linkedin" id="Linkedin">
+          </div>
+          <div>
+            <label for="ClassMate">Linkedin</label>
+            <input type="checkbox" name="ClassMate" id="ClassMate">
+          </div>
+          <div>
+            <label for="Codeacademyrec">Austin Coding Academy</label>
+            <input type="checkbox" name="Codeacademyrec" id="Codeacademyrec">
+          </div>
+        </div>
+
+        <div>
+          <label for="bio">Bio</label>
+          <textarea id="bio" name="bio"></textarea>
+        </div>
+        <input type="hidden" name="hidden" value="hi">
+        <div>
+          <label for="file">File</label>
+          <input id="file" type="file" name="file">
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" name="phone" id="phone">
+        </div>
+        <div>
+          <label for="url">URL</label>
+          <input type="url" name="url" id="url">
+        </div>
+        <div>
+          <label for="color">Color</label>
+          <input type="color" name="color" id="color">
+        </div>
+        <div>
+          <label>
+            Password
+            <input type="password" name="password" >
+          </label>
+        </div>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+      </form>
+    </body>
 </nav>
 </header>
 <Main>
