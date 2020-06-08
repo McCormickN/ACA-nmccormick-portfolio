@@ -110,3 +110,10 @@ body {
   background-color: #537E9D;
   color: white;
 }
+.Contactme{
+ display: grid;
+
+}
+.email{
+  color: #537E9D;
+}
