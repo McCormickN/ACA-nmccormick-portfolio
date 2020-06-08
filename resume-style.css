@@ -182,3 +182,104 @@ body {
   background-color: #537E9D;
   color: white;
 }
+.grid-containerabout {
+  display: grid;
+  border: 5px solid #537E9D;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: repeat(8, auto);
+  grid-row-gap: 50px;
+  grid-template-areas: 
+        "headername headername headername headername" 
+        "profilepic lorumheader1 lorumheader1 lorumheader1"
+        "profilepic lorumbody1 lorumbody1 lorumbody1"
+        "telappriselogo telappriselogo telappriselogo telappriselogo"
+        "lorumheader2 lorumheader2 lorumheader2 scrollimg"
+        "lorumbody2 lorumbody2 lorumbody2 scrollimg"
+        "scrollimg2 lorumheader3 lorumheader3 lorumheader3"
+        "scrollimg2 lorumbody3 lorumbody3 lorumbody3"
+}
+.headername{
+  grid-area: headername;
+  text-align: center;
+  color: aliceblue;
+  font-size: 50px;
+  background-color: #537E9D;
+}
+.lorumheader1{  
+  grid-area: lorumheader1;
+  margin: auto;
+  color: #537E9D;
+  font-size: 25px; 
+}
+.lorumbody1{  
+  grid-area: lorumbody1;
+  margin: auto;
+  color: #537E9D;
+}
+.lorumbody2{  
+  grid-area: lorumbody2;
+  margin: auto;
+  color: #537E9D;
+}
+.lorumheader2{  
+  grid-area: lorumheader2;
+  margin: auto;
+  color: #537E9D;
+  font-size: 25px; 
+}
+.lorumheader3{  
+  grid-area: lorumheader3;
+  margin: auto;
+  color: #537E9D;
+  font-size: 25px; 
+}
+.lorumbody3{  
+  grid-area: lorumbody3;
+  margin: auto;
+  color: #537E9D;
+  font-size: 20px; 
+}
+.telappriselogo{
+  grid-area: telappriselogo;
+  justify-self: center;
+
+}
+.scrollimg{
+  grid-area: scrollimg;
+  object-fit: cover;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20%;
+}
+.scrollimg2{
+  grid-area: scrollimg2;
+  object-fit: cover;
+  justify-content: center;
+  margin: auto;
+  border-radius: 20%;
+
+}
+.profilepic{
+  grid-area: profilepic;
+  border-radius: 20%;
+  object-fit: cover;
+  margin: auto;
+}
+@media (max-width:924px){
+  .grid-containerabout{
+      display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows:auto;
+      grid-template-areas: 
+      "headername" 
+        "profilepic"
+        "lorumheader1"
+        "lorumbody1"
+        "telappriselogo"
+        "scrollimg"
+        "lorumheader2"
+        "lorumbody2"
+        "scrollimg2"
+        "lorumheader3"
+        "lorumbody3";
+      }
