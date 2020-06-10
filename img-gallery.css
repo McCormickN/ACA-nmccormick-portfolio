@@ -32,6 +32,10 @@
   }
   .overlayegg {
     position: absolute;
+    -webkit-animation: example 1s infinite;
+    -moz-animation: example 1s infinite;
+    -o-animation: example 1s infinite;
+    animation: example 1s infinite;
     top: 0;
     bottom: 0;
     left: 0;
@@ -40,7 +44,16 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  @keyframes example {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:10px; top:0px;}
+    50%  {background-color:blue; left:10px; top:10px;}
+    75%  {background-color:green; left:0px; top:10px;}
+    100% {background-color:red; left:0px; top:0px;}
+    
   }
 .text {
     color: white;
@@ -169,7 +182,7 @@
     position: relative;
     width: 100%;
 }
-.i17:hover .overlay {
+.i17:hover .overlayegg {
     opacity: 1;
 }
 /* Trying out the frame */
